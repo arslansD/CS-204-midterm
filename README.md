@@ -30,9 +30,53 @@ spring.datasource.password= {db_user_pass}
 ## Deployment
 The project is deployed on a free node of Heroku, but there is no use of visiting it because of token requirements no available browsable API in Spring Boot.
 
-
-#### Note:
+### Note:
 This repo contains Server Part written in Spring Boot
 
 Detailed information about all endpoints and their specification can be found [here](https://documenter.getpostman.com/view/6754479/Szt8covo?version=latest#35a2fc61-8988-4c78-9ec3-7f779e53dee2),
 documentation was created using Postman, if you have postman desktop app you can try all requests and test them out.
+
+## Models
+
+Model is the single, definitive source of information about your data. It contains the essential fields and behaviors of the data you’re storing. Generally, each model maps to a single database table, they are the core of the polls app, so I decided to first start with them.
+
+User model: Our application allows new users to register and login to our application. Every User will have one or more roles. The roles associated with a user will be used to decide whether the user is authorized to access a particular resource on our server or not. The User model contains the following fields -
+
+id: Primary Key
+username: A unique username
+email: A unique email
+password: A password that will be stored in an encrypted format.
+roles: A set of roles. (Many-To-Many relationship with Role entity)
+
+# IMAGE 1
+<img src="OOP%20App%20Screenshots/Editing%20book-fourth.PNG">
+
+Role model: The Role class contains an
+
+id: Primary Key
+name: String field.
+The name field is an enum. We’ll have a fixed set of pre-defined roles. So it makes sense to make the role name as enum.
+
+# IMAGE 2
+
+Poll model: A poll is used to represent poll table in the database and has an
+
+id: Primary Key
+question: String field
+choices: OneToMany related field with Choice model
+expirationDateTime: Instant DateTime
+
+# IMAGE 3
+
+Choice model: Every Poll choice has an
+
+id: Primary Key
+text: String field
+and related to a Poll via a foreign key relationship.
+
+# IMAGE 4
+
+Vote model The Vote class contains information about which user voted for which choice in a poll.
+
+#  IMAGE 5
+
