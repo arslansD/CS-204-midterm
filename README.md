@@ -39,7 +39,7 @@ This repo contains Server Part written in Spring Boot
 Detailed information about all endpoints and their specification can be found [here](https://documenter.getpostman.com/view/6754479/Szt8covo?version=latest#35a2fc61-8988-4c78-9ec3-7f779e53dee2),
 documentation was created using Postman, if you have postman desktop app you can try all requests and test them out.
 
-## Models
+## Models & Postgre database
 
 Model is the single, definitive source of information about your data. It contains the essential fields and behaviors of the data you’re storing. Generally, each model maps to a single database table, they are the core of the polls app, so I decided to first start with them.
 
