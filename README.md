@@ -48,7 +48,6 @@ email: A unique email
 password: A password that will be stored in an encrypted format.
 roles: A set of roles. (Many-To-Many relationship with Role entity)
 
-# IMAGE 1
 <img src="screenshots/models-1.png">
 
 Role model: The Role class contains an
@@ -57,7 +56,7 @@ id: Primary Key
 name: String field.
 The name field is an enum. We’ll have a fixed set of pre-defined roles. So it makes sense to make the role name as enum.
 
-# IMAGE 2
+<img src="screenshots/models-2.png">
 
 Poll model: A poll is used to represent poll table in the database and has an
 
@@ -66,7 +65,7 @@ question: String field
 choices: OneToMany related field with Choice model
 expirationDateTime: Instant DateTime
 
-# IMAGE 3
+<img src="screenshots/models-3.png">
 
 Choice model: Every Poll choice has an
 
@@ -74,9 +73,9 @@ id: Primary Key
 text: String field
 and related to a Poll via a foreign key relationship.
 
-# IMAGE 4
+<img src="screenshots/models-4.png">
 
 Vote model The Vote class contains information about which user voted for which choice in a poll.
 
-#  IMAGE 5
+<img src="screenshots/models-5.png">
 
