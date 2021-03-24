@@ -31,7 +31,7 @@ spring.datasource.url= jdbc:postgresql://localhost:5432/{your_db_name}
 spring.datasource.username= {your_db_user}
 spring.datasource.password= {db_user_pass}
 ## Deployment
-The project is deployed on a free node of Heroku, but there is no use of visiting it because of token requirements no available browsable API in Spring Boot.
+The project is deployed on a free node of [Heroku](https://cryptic-tundra-25469.herokuapp.com/), but there is no use of visiting it because of token requirements no available browsable API in Spring Boot.
 
 ### Note:
 This repo contains Server Part written in Spring Boot
