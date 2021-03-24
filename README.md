@@ -49,7 +49,7 @@ password: A password that will be stored in an encrypted format.
 roles: A set of roles. (Many-To-Many relationship with Role entity)
 
 # IMAGE 1
-<img src="OOP%20App%20Screenshots/Editing%20book-fourth.PNG">
+<img src="blob/main/screenshots/models-1.png">
 
 Role model: The Role class contains an
 
