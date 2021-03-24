@@ -2,6 +2,9 @@
 #### Create polls with ease
 Create polls, get vote count with authentication system, which allows users to register and login
   
+<img src="screenshots/logo.png">
+
+
 ### Basic information regarding the application:
 
 Purpose of the project
