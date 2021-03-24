@@ -30,8 +30,8 @@ After a successful installation configure the project to use your database and u
 spring.datasource.url= jdbc:postgresql://localhost:5432/{your_db_name}
 spring.datasource.username= {your_db_user}
 spring.datasource.password= {db_user_pass}
-## Deployment
-The project is deployed on a free node of [Heroku](https://cryptic-tundra-25469.herokuapp.com/), but there is no use of visiting it because of token requirements no available browsable API in Spring Boot.
+## Deployment and Web app
+The project is deployed on a free node of [Heroku](https://cryptic-tundra-25469.herokuapp.com/), but there is no use of visiting it because of token requirements no available browsable API in Spring Boot. Thus, it's recommended to download the project and check it through IntelliJ.
 
 ### Note:
 This repo contains Server Part written in Spring Boot
